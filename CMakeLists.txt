@@ -9,7 +9,14 @@ add_executable(VideoPlayer
       src/window.cpp
 )
 
+#Add the include directories and link libraries here
+target_include_directories(VideoPlayer
+PUBLIC ${SDL2_INCLUDE_DIR}
+}
 
+target_link_libraries(VideoPlayer
+SDL2::SDL2
+}
 
 
 
